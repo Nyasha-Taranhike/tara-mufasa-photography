@@ -1,0 +1,502 @@
+//Get bootstraps helper scss classes
+@import "../L1T14/scss/bootstrap.scss";
+
+//font import
+//TODO: Fix which font it uses
+@font-face {
+  font-family: Metropolis;
+  src: url(./fonts/Metropolis-Medium.otf);
+}
+
+//Root or *
+:root {
+  --white: #ffffff;
+  --body: #545d6d;
+  --dark: #202631;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --border-width: 1px;
+  --border-radius: 30px;
+}
+
+//reset and helpers
+body {
+  font-family: Metropolis;
+  line-height: 1.8;
+  color: var(--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  color: var(--dark);
+}
+
+a {
+  color: var(--body);
+  text-decoration: none;
+  transition: all 0.4s ease;
+  font-weight: 700;
+}
+
+a:hover {
+  color: var(--dark);
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding-top: 170px;
+  padding-bottom: 170px;
+}
+
+//navbar
+.navbar {
+  position: absolute;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  z-index: 9999;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-nav .navbar-link {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+//TODO: MAKE THE COLLAPSING BAR WHITE TODO: CHANGE THE HEADER POSITION TO RELATIVE OR GIVE NAV A BACKROUND WHEN EXPANDED
+.social-links a {
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  font-size: 18px;
+  margin-left: 3px;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    //Change color of collapsed navbar
+    background-color: black;
+  }
+}
+
+//hero: TODO: Change to your Black and white photo later
+#hero {
+  background: url(./images/mufasa-self-portrait.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+#hero h1,
+#hero p {
+  color: var(--white);
+}
+
+#hero h1 {
+  font-weight: 900;
+  padding-top: 28%;
+}
+
+#hero p {
+  font-size: 18px;
+  max-width: 450px;
+}
+
+//btn
+.btn {
+  padding: 20px 44px;
+  border-width: 2px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+//intro
+.intro {
+  margin-bottom: 60px;
+}
+
+.intro .hr-line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--dark);
+  display: inline-block;
+}
+
+.intro h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.intro p {
+  max-width: 500px;
+}
+
+//for the portfolio//
+.intro.intro-dark h1,
+.intro.intro-dark p {
+  color: white;
+}
+
+.intro.intro-dark .hr-line {
+  background-color: white;
+}
+
+//service
+.service {
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 32px;
+  display: flex;
+}
+
+.service .icon {
+  width: 100px;
+  height: 100px;
+  background-color: var(--dark);
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  color: white;
+  border-radius: var(--border-radius);
+  margin-right: 16px;
+}
+
+.link-arrow {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.link-arrow i {
+  transition: all 0.4s ease;
+}
+
+.link-arrow:hover i {
+  transform: translate(5px, -5px);
+}
+
+//Bootstrap has a link-dark function//
+.link-arrow.link-darke {
+  color: var(--body);
+}
+.link-arrow.link-darke:hover {
+  color: white;
+}
+/////////////////////////////////////
+
+//work
+#portfolio {
+  background-color: var(--dark);
+}
+
+/*TODO: was not supposed to have #portfolio
+#portfolio a:hover {
+    color: var(--white);
+}
+FIXED: link-dark is a defined bootstrap key word
+*/
+
+.project h3 {
+  color: white;
+  margin-top: 24px;
+}
+
+.project .image-wrapper {
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+.project .image-wrapper img {
+  border-radius: var(--border-radius);
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+}
+
+.project:hover .image-wrapper img {
+  transform: scale(1);
+}
+///////////////////////////////////////////////////////////////
+//Expanding Gallery
+//TODO: Change this colour
+//TODO: Change the height and width to cover full section
+//TODO: IMages grey unless hovering
+//TODO: Images slider with 6 plus total selections
+#expandingz .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profilz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-boxz {
+  //TODO: CHANGE THESE TO A PERCENTAGE INSTEAD
+  width: 100px;
+  height: 500px;
+  margin: 10px;
+  border-radius: 50px;
+  background: url(./images/favorite-shoots/Waliyah-Final-6.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  //Slow down all 0.2s transotions
+  transition: width 0.2s;
+}
+
+.img-boxz:nth-child(2) {
+  background: url(./images/favorite-shoots/Siba-Parking-Lot_115.JPG);
+  background-size: cover;
+  background-position: left;
+}
+
+.img-boxz:nth-child(3) {
+  background: url(./images/favorite-shoots/Patricia_204.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-boxz:nth-child(4) {
+  background: url(./images/favorite-shoots/Jamie-Jan_Tennis-Courts_152.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-boxz h5 {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  font-weight: 600;
+  left: 30px;
+  opacity: 0;
+  transition: bottom 0.2s, opacity 0.2s;
+}
+
+.img-boxz:hover {
+  width: 300px;
+  cursor: pointer;
+}
+
+.img-boxz:hover h5 {
+  opacity: 1;
+  bottom: 25px;
+}
+
+////////////////////////////////////////////////////////////////////
+//about
+#about img {
+  border-radius: var(--border-radius);
+}
+
+//reviews
+#testimonials {
+  background-color: #f8f8f8;
+}
+
+.review {
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 32px;
+  background-color: white;
+}
+
+.review .person {
+  display: flex;
+  align-items: center;
+}
+
+.review .person img {
+  width: unset;
+  border-radius: var(--border-radius);
+  margin-right: 16px;
+}
+
+.review .stars {
+  color: orange;
+}
+
+.review p {
+  border-bottom: var(--border-width) solid var(--border-color);
+  padding-bottom: 16px;
+}
+
+// contact
+#contact form {
+  padding: 32px;
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+#contact form .form-control {
+  background-color: #f8f8f8;
+  border: transparent;
+  border-radius: var(--border-radius);
+  padding-left: 18px;
+}
+
+#contact form input.form-control {
+  height: 56px;
+}
+
+// insta posts
+#insta-posts {
+  position: relative;
+}
+
+.insta-follow {
+  width: 90px;
+  height: 90px;
+  background-color: var(--dark);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+  border-radius: var(--border-radius);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.insta-follow:hover {
+  background-color: white;
+}
+
+#insta-posts:hover .insta-follow {
+  opacity: 1;
+  top: 50%;
+}
+
+// footer
+.footer-top {
+  padding-bottom: 30px;
+  border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer .social-links a {
+  border: var(--border-width) solid var(--border-color);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////GALLERY PAGE/////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////
+//Good code below
+#gall .container .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#gall .container .box .dream {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+#gall .container .box .dream img {
+  width: 100%;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+//TODO make font weight of "..Gallery" heading word less than weight of "Photo"
+
+//Make each column only show in one row
+@media only screen and (max-width: 769px) {
+  #gall .container .box {
+    flex-direction: column;
+  }
+
+  #gall .container .box .dream {
+    width: 100%;
+  }
+}
+///////////////////////////////////////////////////////////////////////////
+//TODO: Make table rounded. This does not work
+
+#price .align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  width: 100%;
+  padding-bottom: 10px;
+  border-radius: p5x;
+}
+
+//////////////////////////Favorites////////////////////////////////////////
+.favorite-btn {
+  position: relative;
+  right: -90%;
+  top: -40px;
+  background-color: rgba(0, 0, 0, 0.082);
+
+  width: 12px; //!important;
+  height: 13px;
+  border-radius: 20%;
+  //font-size: 22px;
+  //padding-left: 0px;
+  //padding-bottom: 8px;
+
+  color: white;
+}
+
+.is-favorite {
+  background-color: #29abe0 !important;
+  color: white !important;
+}
+
+.favBox {
+  padding: 32px;
+  //border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: rgba(243, 243, 243, 0.534);
+}
+
+//////////////////////////Favorite Button////////////////////////////////////////
+
+//////////////////////////Comments Section////////////////////////////////////////
+#commentSection ul {
+  padding: 32px;
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+//////////////////////////Comments Section////////////////////////////////////////

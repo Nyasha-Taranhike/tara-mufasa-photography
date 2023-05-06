@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--MY TODOS:
+    ******SEEE GALLERY AND SAVE_LATER FILES FOR SAVE LATER FUNCTIONALITY****************
+    FLOATING TOP BUTTON:     Button to advance to the top: Always on
+    COMPRESSE THE IMAGE SIZES FOR WEB: For Top Shoots Section
+    IN SERVICES TAB MAKE A LIST OF WHATS INCLUDE IN THE SHOOT
+    Change fonts
+    add a slide bar to the favourite shoots
+    HERO needs an image when the screen is too small
+    Smaller Copyright footer font
+
+    NOTE: TO down size images use 1080 px for the shortest side
+    -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tara Mufasa Photography</title>
+    <!--Animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Icons-->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--Fonts-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./taraStyles.css">
+
+    <!--Including jQuery TODO: Import jquery on all of the html files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+</head>
+
+<body>
+    <!--NAV-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tara Mufasa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="price-list.html" target="_blank">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--I want to make sure only the price list opens a new tab -->
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <!--TODO: ADD items to this dropdown ()-->
+                    <!--TODO: ADD items to this dropdown ()-->
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Coming Soon
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Podcast</a></li>
+                            <li><a class="dropdown-item" href="#">Merchandise</a></li>
+                            <li><a class="dropdown-item" href="#">NEW LOGO!!</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Loyalty</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <div class="social-links ms-auto">
+                    <!--TODO: Create accounts for twitter and patreon-->
+                    <a href="https://www.instagram.com/tmufasaphotography/?hl=en"><i class="ri-instagram-fill"></i></a>
+                    <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#phone"><i class="ri-whatsapp-fill"></i></a>
+                    <a href="https://www.instagram.com/tmufasaphotography/?hl=en"><i class="ri-twitter-fill"></i></a>
+                    <a href="https://www.instagram.com/tmufasaphotography/?hl=en"><i class="ri-patreon-fill"></i></a>
+                </div>
+                <!-- TODO: THIS IS THE SEARCH BAR 
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                -->
+            </div>
+        </div>
+    </nav>
+
+    <!--Header-->
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="display-1" data-aos="fade-up">TARA MUFASA</h1>
+                    <p data-aos="fade-up" data-aos-delay="300">Hello, my name is Nyasha Taranhike. I am a Zimbabwean
+                        fashion and portrait photographer.
+                        <br><br>
+                        Based in Harare, Zimbabwe and Cape Town, South Africa.
+                        I've been shooting for 4 years and would like to share my journey to you.
+                        <br>
+                    </p>
+                    <a href="#portfolio" class="btn btn-outline-light" data-aos="fade-up" data-aos-delay="500">Explore
+                        My
+                        Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Services-->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="intro text-center">
+                        <div class="hr-line"></div>
+                        <h1 class="display-4">Services</h1>
+                        <p class="mx-auto">With many features and products coming soon, these are the products we
+                            currently have available. <br>
+                            Feel free to create a bundle of all your favourites.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service">
+                        <div class="icon">
+                            <i class="ri-camera-2-fill"></i>
+                        </div>
+                        <div>
+                            <h5>Photography</h5>
+                            <p>Were it all started. "Tara Mufasa Photography," is the pride and joy of our brand and the
+                                most established branch of the brand. Feel free to make a choice between the various
+                                shoot styles.</p>
+                            <a href="price-list.html" class="link-arrow">Read More <i
+                                    class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="service">
+                        <div class="icon">
+                            <i class="ri-computer-fill"></i>
+                        </div>
+                        <div>
+                            <h5>Web Design</h5>
+                            <p>The youngest and fastest growing branch. Your website is an integral part of your brand.
+                                We aim to deliever you quality. Feel free to make a choice between the various
+                                website styles.</p>
+                            <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service">
+                        <div class="icon">
+                            <i class="ri-group-fill"></i>
+                        </div>
+                        <div>
+                            <h5>Model Management</h5>
+                            <p>Another well established branch. The biggest assest you have is yourself.
+                                We aim to connect you with the best oppurtunoties for your goals. Click here to finally
+                                build your brand.</p>
+                            <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service">
+                        <div class="icon">
+                            <i class="ri-search-fill"></i>
+                        </div>
+                        <div>
+                            <h5>Media Reach</h5>
+                            <p>In our opinion this is the most important branch. In the digital market your online
+                                footprint is more crucial than ever. We aim to make sure your brands presence is felt in
+                                the market.</p>
+                            <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Projects-->
+    <!--TODO: MAKE IMAGES COLOUR WHEN HOVERING ELSE BLACK AND WHITE-->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row align-items-center justify-content-between" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div class="intro intro-dark">
+                        <div class="hr-line"></div>
+                        <h1 class="display-4">My Portfolio</h1>
+                        <p>A quick summary of the 250+ shoots I've had over the past 4 years. <br>
+                            It has been a wonderful journey and I am grateful that I get to continue this journey with
+                            you.</p>
+                    </div>
+                </div>
+                <div class="col-auto pb-3">
+                    <!--TARGET Allows it to move to a new tab-->
+                    <a href="gallery.html" class="btn btn-outline-light" target="_blank">View More</a>
+                </div>
+            </div>
+            <div class="row gy-5">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up">
+                    <div class="project">
+                        <div class="image-wrapper">
+                            <img src="./images/favorite-shoots/patricia_tennis_19.jpg" alt="PHOTO 1">
+                        </div>
+                        <h3>Patricia</h3>
+                        <a href="gallery.html" class="link-arrow link-darke">Read More <i
+                                class="ri-arrow-right-up-line"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project">
+                        <div class="image-wrapper">
+                            <img src="./images/favorite-shoots/Pepjin-Final-5.jpg" alt="PHOTO 1">
+
+                        </div>
+                        <h3>Pepjin</h3>
+                        <a href="gallery.html" id="portfolio" class="link-arrow link-darke">Read More <i
+                                class="ri-arrow-right-up-line"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project">
+                        <div class="image-wrapper">
+                            <img src="./images/favorite-shoots/Siba-Final-4.jpg" alt="PHOTO 1">
+                        </div>
+                        <h3>Siba</h3>
+                        <a href="gallery.html" id="portfolio" class="link-arrow link-darke">Read More <i
+                                class="ri-arrow-right-up-line"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project">
+                        <div class="image-wrapper">
+                            <img src="./images/Luca_89.jpg" alt="PHOTO 1">
+                        </div>
+                        <h3>Luca</h3>
+                        <a href="gallery.html" id="portfolio" class="link-arrow link-darke">Read More <i
+                                class="ri-arrow-right-up-line"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project">
+                        <div class="image-wrapper">
+                            <img src="./images/favorite-shoots/Sbu-Final-6.jpg" alt="PHOTO 1">
+                        </div>
+                        <h3>Sbu</h3>
+                        <a href="gallery.html" id="portfolio" class="link-arrow link-darke">Read More <i
+                                class="ri-arrow-right-up-line"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="project">
+                        <div class="image-wrapper">
+                            <img src="./images/Pepsi Gram Garden_4.JPG" alt="PHOTO 1">
+
+                        </div>
+                        <h3>Samurai</h3>
+                        <a href="gallery.html" id="portfolio" class="link-arrow link-darke">Read More <i
+                                class="ri-arrow-right-up-line"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Expanding Gallery-->
+    <section id="expandingz">
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-5">
+                    <div class="intro mb-4">
+                        <div class="hr-line"></div>
+                        <h1 class="display-4">My favourite Shoots</h1>
+                    </div>
+                    <p>These are the shoots I've enjoyed the most. Not only did I enjoy these shoots but
+                        each model really get their best!<br> <br>
+
+                        They either expanded the thought process I would use
+                        for the shoot or gave me a much need lesson in creativity.
+                    </p>
+                    <!--Make images Transition individually-->
+                </div>
+                <div class="col-lg-6 offset-lg-1 profilz">
+                    <div class="img-boxz">
+                        <a href="gallery.html">
+                            <h5>Waliyah</h5>
+                        </a>
+                    </div>
+                    <div class="img-boxz">
+                        <a href="gallery.html">
+                            <h5>Siba</h5>
+                        </a>
+                    </div>
+                    <div class="img-boxz">
+                        <a href="gallery.html">
+                            <h5>Patricia</h5>
+                        </a>
+                    </div>
+                    <div class="img-boxz">
+                        <a href="gallery.html">
+                            <h5>Jamie-Lee</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--About-->
+    <section id="about">
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-5 pb-3">
+                    <div class="intro mb-4">
+                        <div class="hr-line"></div>
+                        <!--TODO: Make "Bit..." font-weight a bit less-->
+                        <h1 class="display-4 pb-3">A Little bit about me</h1>
+                    </div>
+                    <p>Creativity was something that came to me but what I never understood was how to get the best out
+                        of other people. How to grow their vision and help them become the best in their field.</p>
+                    <p class="pb-2">Photography helped me harness the ability to put someones vision to life, and speak
+                        their thoughts into existance. <br>
+                        As TARA MUFASA, I am here to fufil the vision of any creator that has been left out of
+                        mainstream styles of
+                        art</p>
+                    <a href="#contact" class="btn btn-outline-dark">Contact Me</a>
+                </div>
+                <!--TODO: Add an if statement for this padding-->
+                <div class="col-lg-6 offset-lg-1">
+                    <img src="./images/tara-about.jpg" alt="Me">
+                    <div>
+                        <!--TODO: Give footer block styling-->
+                        <figure class="text-end pt-2">
+                            <blockquote class="blockquote">
+                                <p>"Let's talk about what they don't want to talk about."</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer fw-bolder">
+                                Tara Mufasa
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonials-->
+    <section id="reviews">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="intro text-center">
+                        <div class="hr-line"></div>
+                        <h1 class="display-4">Client<br> critiques</h1>
+                        <p class="mx-auto">A few honest words from the people I have had the pleasure of collaborating
+                            with. Please feel to also leave any critiques or compliments as you please.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="review">
+                        <p>Good reception,smart, great service and customer care.
+                        </p>
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-auto person">
+                                <img src="./images/avatar_2.jpg" alt="">
+                                <div>
+                                    <h5>Sbu Mhlom</h5>
+                                    <small>Stellenbosch, WC</small>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="review">
+                        <p>The staff is professional and they make you feel at
+                            home.</p>
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-auto person">
+                                <img src="./images/avatar_4.jpg" alt="">
+                                <div>
+                                    <h5>Jamie-Lee Adams</h5>
+                                    <small>Stellenbosch, WC</small>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="review">
+                        <p>Great photography.
+                        </p>
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-auto person">
+                                <img src="./images/avatar_1.jpg" alt="">
+                                <div>
+                                    <h5>Waliyah Hess</h5>
+                                    <small>Stellenbosch, WC</small>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="review">
+                        <p>Very commendable and professional work.
+                        </p>
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-auto person">
+                                <img src="./images/avatar_3.jpg" alt="">
+                                <div>
+                                    <h5>Luca Bienz</h5>
+                                    <small>Stellenbosch, WC</small>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="intro text-center">
+                        <div class="hr-line"></div>
+                        <h1 class="display-4">LET'S GET You<br>
+                            Started</h1>
+                        <p class="mx-auto">For any queries, comments or messages please enter your details so we can
+                            start the conversation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto" data-aos="fade-up">
+                    <form action="" class="row gy-3">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="col-lg-12">
+                            <textarea class="form-control" placeholder="message" rows="5"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-dark">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--INsta Posts-->
+    <section class="py-0 w-100 row" id="insta-posts">
+        <div class="col ms-4">
+            <img src="./images/Happy 24th Birthday_51.JPG" alt="Post 4">
+        </div>
+        <div class="col">
+            <img src="./images/Happy 24th Birthday_54.JPG" alt="Post 1">
+        </div>
+        <div class="col">
+            <img src="./images/Test Megan duo_1.jpg" alt="Post 2">
+        </div>
+        <div class="col">
+            <img src="./images/Test Megan duo_47.jpg" alt="Post 3">
+        </div>
+        <a href="https://www.instagram.com/tmufasaphotography/?hl=en" class="insta-follow">
+            <i class="ri-instagram-fill"></i>
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="pb-0">
+        <footer>
+            <div class="container footer-top">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <div>
+                            <p class="mb-0">EMAIL</p>
+                            <h2>taramufasa@gmail.com</h2>
+                        </div>
+                        <div class="mt-4">
+                            <p id="phone" class="mb-0">PHONE</p>
+                            <h2>+263 00 00 00 00</h2>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <h5 class="mb-3">Follow me on</h5>
+                        <div class="social-links ms-auto">
+                            <!--CHANGE NON FACENOOK LINKS TO THE RESPECTIVE LINKS-->
+                            <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-facebook-fill"></i></a>
+                            <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-twitter-fill"></i></a>
+                            <a href="https://github.com/Nyasha-Taranhike"><i class="ri-github-fill"></i></a>
+                            <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-google-fill"></i></a>
+                            <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-youtube-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container footer-bottom">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">Copyright © All Rights Reserved Tara Mufasa</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="mb-0">Shot and Designed by <a href="index.html#about">Tara Mufasa</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!--Animations-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Initialize Animations-->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="./aos-master/src/js/app.js"></script>
+</body>
+
+</html>

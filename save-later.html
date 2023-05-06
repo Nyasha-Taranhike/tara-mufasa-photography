@@ -1,0 +1,265 @@
+<!--TODOS: 
+                  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Favorites | Tara Mufasa</title>
+    <!--Animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Icons-->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--Fonts-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./taraStyles.css">
+
+    <!--Including jQuery TODO: Import jquery on all of the html files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+</head>
+
+<body id="gall">
+    <!--NAV-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tara Mufasa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="price-list.html" target="_blank">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--I want to make sure only the price list opens a new tab -->
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <!--Will take you back home then to services-->
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                    <!--TODO: ADD items to this dropdown ()-->
+                    <!--Add feafures that are coming soon as a new list element-->
+                    <!--TODO: ADD items to this dropdown ()-->
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Coming Soon
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Podcast</a></li>
+                            <li><a class="dropdown-item" href="#">Merchandise</a></li>
+                            <li><a class="dropdown-item" href="#">NEW LOGO!!</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Loyalty</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <div class="social-links ms-auto">
+                    <!--TODO: Create accounts for twitter and patreon-->
+                    <a href="https://www.instagram.com/tmufasaphotography/?hl=en"><i class="ri-instagram-fill"></i></a>
+                    <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#phone"><i class="ri-whatsapp-fill"></i></a>
+                    <a href="https://www.instagram.com/tmufasaphotography/?hl=en"><i class="ri-twitter-fill"></i></a>
+                    <a href="https://www.instagram.com/tmufasaphotography/?hl=en"><i class="ri-patreon-fill"></i></a>
+                </div>
+                <!-- TODO: THIS IS THE SEARCH BAR 
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            -->
+            </div>
+        </div>
+    </nav>
+
+
+    <!--IMAGE GRID-->
+    <section>
+        <div class="container">
+            <div class="intro text-center">
+                <!--TODO: Shrink the word Gallery-->
+                <h1 class="display-4 fav-heading" data-aos="fade-up">Favorites <span>(Later)</span></h1>
+                <ul class="accordion">
+                    <h5><a href="gallery.html">Back to Gallery</a></h5>
+                    <h5><a href="price-list.html">Book a shoot</a></h5>
+                    <h5><a href="index.html">Home</a></h5>
+                </ul>
+                <div class="hr-line"></div>
+            </div>
+            <div class="box favBox">
+                <!--RATION: 3 Vertical images to 2 horizontal images (3:2)
+                      TODO: GET VIDEOS WORKING
+                            Hover to trigger gif or Video-->
+                <div class="dream" data-aos="fade-up" data-aos-delay="100">
+                    <p id="favoritesOnList">
+                    </p>
+                </div>
+
+                <div class="dream" data-aos="fade-up" data-aos-delay="200">
+                    <p id="secondColumn"></p>
+
+                </div>
+
+                <div class="dream" data-aos="fade-up" data-aos-delay="300">
+                    <p id="thirdColumn"></p>
+
+
+
+                </div>
+
+            </div>
+            <!--TODO: ADD MORE Photos when clicking more
+                        MIGHT Want to make sure all 3 cols are same height for 
+                        simplicity
+                      Increase button size-->
+            <div class="text-center pt-5">
+                <div class="col pt-5">
+                    <a href="price-list.html" class="btn btn-outline-dark align-items-center chainSlider">Book
+                        Session</a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <br><br>
+
+        <!--Comments Section-->
+        <div id="contact" class="container">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="intro text-center">
+                        <div class="hr-line"></div>
+                        <h1 class="display-4">Leave Us a<br>
+                            Comment</h1>
+                        <p class="mx-auto">Let us know your thoughts on your favourite images or what you think we
+                            should improve on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto" data-aos="fade-up">
+                    <form action="" class="row gy-3">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" placeholder="Name" name="name" id="name">
+                        </div>
+                        <div class="col-lg-12">
+                            <textarea class="form-control" placeholder="Add a Comment" rows="5" name="comment"
+                                id="comment"></textarea>
+                        </div>
+                        <div class="col-12 ">
+                            <button onclick="addComment()" class="btn btn-dark float-end">Comment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container" id="commentSection" data-aos="fade-up" data-aos-delay="100">
+            <!--TODO: Make "section" less bold -->
+            <h2>Comments <span>Section</span> </h2>
+            <hr>
+            <p id="commentsOnList" class="hideThis">
+            </p>
+
+
+            <div class="container col pt-2">
+                <button class="btn btn-outline-dark align-items-center float-end" id="hideBtn">Hide</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <p class="like-no"></p>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-top">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <div>
+                        <p class="mb-0">EMAIL</p>
+                        <h2>taramufasa@gmail.com</h2>
+                    </div>
+                    <div class="mt-4">
+                        <p id="phone" class="mb-0">PHONE</p>
+                        <h2>+263 00 00 00 00</h2>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <h5 class="mb-3">Follow me on</h5>
+                    <div class="social-links ms-auto">
+                        <!--CHANGE NON FACENOOK LINKS TO THE RESPECTIVE LINKS-->
+                        <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-facebook-fill"></i></a>
+                        <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-twitter-fill"></i></a>
+                        <a href="https://github.com/Nyasha-Taranhike"><i class="ri-github-fill"></i></a>
+                        <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-google-fill"></i></a>
+                        <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-youtube-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <p class="mb-0">Copyright © All Rights Reserved Tara Mufasa</p>
+                </div>
+                <div class="col-auto">
+                    <p class="mb-0">Shot and Designed by <a href="index.html#about">Tara Mufasa</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Animations-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Initialize Animations-->
+    <script>
+        AOS.init();
+    </script>
+
+    <!--Personal javascript and jQuery Script-->
+    <script src="./js/script.js"></script>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="./aos-master/src/js/app.js"></script>
+</body>
+
+</html>
