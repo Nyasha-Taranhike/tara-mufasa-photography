@@ -10865,6 +10865,23 @@ section {
   background-size: cover;
 }
 
+#logo {
+  position: absolute;
+  overflow: hidden;
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  right: -20%;
+  top: 80px;
+}
+
+.head-logo {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+
 #hero h1, #hero .h1,
 #hero p {
   color: var(--white);
@@ -11007,6 +11024,12 @@ FIXED: link-dark is a defined bootstrap key word
   justify-content: center;
 }
 
+@media only screen and (max-width: 720px) {
+  #expandingz .profilz {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+}
 .img-boxz {
   width: 100px;
   height: 500px;
@@ -11147,6 +11170,7 @@ FIXED: link-dark is a defined bootstrap key word
 .footer-bottom {
   padding-top: 30px;
   padding-bottom: 30px;
+  font-size: small;
 }
 
 footer .social-links a {
